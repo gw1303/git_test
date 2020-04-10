@@ -243,6 +243,41 @@ gw130@DESKTOP-V7R2S73 MINGW64 ~/Desktop/home/git (master)
 
 
 
+## 원격 저장소 활용 시 주의사항
+
+> 원격 저장소의 이력과 로컬의 이력이 다른 경우 error
+>
+> --> 작업 전 pull을 하면 문제 해결 !
+
+
+
+
+
+## Git 프로젝트 관리
+
+### 1. .gitignore
+
+> git 으로 관리하지 않고 싶은 파일 목록은 `.gitignore` 에 정의한다.
+
+```bash
+# vi로 작성해야 인코딩이 깨지지 않음
+$ vi .gitignore
+```
+
+- .gitignore
+
+  ```bash
+  *.xlsx        # 특정 확장자
+  secret.txt    # 특정 파일
+  test/         # 특정 폴더
+  ```
+
+- 주의 : 확장자 없음
+
+- 만얀, 어떤 파일을 일반적으로 등록하는지 모른다면 [http://gitignore.io/](gitignore.io) 에서 검색
+
+  
+
 
 
 
