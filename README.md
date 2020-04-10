@@ -1,4 +1,5 @@
-# Git
+# 0410 Git 특강
+## Git
 
 >  분산형 버전관리 시스템 (DVCS)  // Commit 으로 version관리
 
@@ -199,7 +200,7 @@ gw130@DESKTOP-V7R2S73 MINGW64 ~/Desktop/home/git (master)
 
 
 
-# CLI
+## CLI
 
 > Command Line Interface에서는 명령어와  그 결과를 항상 주의하자.
 
