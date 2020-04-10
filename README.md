@@ -37,18 +37,75 @@ git config --global user.email gw1303@nate.com
 ### 2. 파일 올리기
 
 ```bash
-# 작업공간
+# 작업공간 (WD)
     |
 $ git add
     |
-# 스테이지
+# 스테이지 (Staging Area)
     |
-$ git commit
+$ git commit -m '커밋 메시지(버전)'
+[master (root-commit) 15683e1] 커밋 메시지(버전)
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 cli.txt
 
-# commit 상태 확인
+# 커밋 이력을 확인
 $ git log
+
+commit 15683e1530682f37c89c94a7d49ca58e90f84ba4 (HEAD -> master)
+Author: gw1303 <gw1303@nate.com>
+Date:   Fri Apr 10 10:26:59 2020 +0900
+
+    커밋 메시지(버전)
 
 $ git push
 
 ```
+
+- 스테이지에 추가
+
+  ```bash
+  $ git add a.txt     # 파일 단위
+  $ git add myfolder/ # 폴더 단위
+  $ git add .         # 전체
+  ```
+
+- 추가 후 상태
+
+  ```bash
+  $ git status
+  On branch master
+  
+  No commits yet
+  
+  Changes to be committed:
+    (use "git rm --cached <file>..." to unstage)
+          new file:   cli.txt
+  
+  ```
+
+- 커밋 상태 확인
+
+  ```bash
+  $ git log
+  $ git log -1            # 최근 한 개 커밋
+  $ git log --oneline     # 간략한 로그
+  $ git log --oneline -1  # 최근 한 개의 커밋을 간략하게
+  ```
+
+- restore
+
+  ```bash
+  # 스테이지에 올린 파일을 제거
+  $ git restore --staged <file>...
+  
+  
+  ```
+
+  
+
+## 원격 저장소 관리(Git hub)
+
+![image-20200410112148951](C:\Users\gw130\AppData\Roaming\Typora\typora-user-images\image-20200410112148951.png)
+
+
 
